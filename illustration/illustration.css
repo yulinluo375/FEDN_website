@@ -6,9 +6,11 @@
 }
 
 :root {
-    --post-spacing: 1.78vw;
-    --post-size: 25vw;
-    --mask-size: 100vw;
+    /* --post-spacing: 1.78vw; */
+    --post-spacing: 1vw;
+    /* --post-size: 25vw; */
+    --post-size: 40vw;
+    --mask-size: 130vw;
 }
 
 * {
@@ -28,7 +30,7 @@ body {
     background: #fff;
     background-image: url(picture/background.png);
     background-repeat: repeat;
-    background-size: 300px 300px;
+    background-size: 300px 400px;
 }
 
 .title {
@@ -46,6 +48,89 @@ body {
     color: white;
 }
 
+
+.btn-group {
+    height: 15vh;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+}
+
+.btn-group .btn {
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
+    border-radius: 1%;
+    border: 3px solid green;
+    background-color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.2s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn-group .btn:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    background-color: green;
+}
+
+.btn-group .btn:hover .icon {
+    fill: #fff;
+}
+
+.btn-group .btn .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-group .btn .right {
+    -webkit-transform: rotate(180deg);
+    /* -webkit-transform: rotate(160deg); */
+    transform: rotate(180deg);
+}
+
+.img-list {
+    left: 0;
+}
+
+
+@-webkit-keyframes admission {
+    0% {
+        -webkit-transform: translate(140vw, 0);
+        transform: translate(140vw, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(13.39vw, 0);
+        transform: translate(13.39vw, 0);
+    }
+}
+
+@keyframes admission {
+    0% {
+        -webkit-transform: translate(140vw, 0);
+        transform: translate(140vw, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(13.39vw, 0);
+        transform: translate(13.39vw, 0);
+    }
+}
+
+/* # sourceMappingURL=illustration.css.map */
+
+
+
+
 #banner {
     overflow: hidden;
     position: relative;
@@ -60,7 +145,7 @@ body {
     -webkit-mask-size: var(--mask-size);
     mask-size: var(--mask-size);
     position: absolute;
-    top: 10%;
+    top: 20%;
 }
 
 #banner .img-wrapper {
@@ -74,7 +159,7 @@ body {
     -webkit-transform: translate(13.39vw, 0);
     transform: translate(13.39vw, 0);
     -webkit-animation: admission 1.5s;
-    animation: admission 1.5s;
+    animation: admission 1s;
 }
 
 #banner .img-wrapper .img-box {
@@ -118,81 +203,6 @@ body {
 
 #banner .img-wrapper .img-box:last-child {
     -webkit-transform: translate(-160.68vw, 0);
-    transform: translate(-160.68vw, 0);
+    /* transform: translate(-160.68vw, 0); */
+    transform: translate(-20vw, 0);
 }
-
-.btn-group {
-    height: 15vh;
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: 1s;
-    transition: 1s;
-    opacity: 0;
-}
-
-.btn-group .btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid #171717;
-    background-color: #fff;
-    margin: 10px;
-    cursor: pointer;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.btn-group .btn:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    background-color: #000;
-}
-
-.btn-group .btn:hover .icon {
-    fill: #fff;
-}
-
-.btn-group .btn .icon {
-    width: 30px;
-    height: 30px;
-}
-
-.btn-group .btn .right {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.img-list {
-    left: 0;
-}
-
-@-webkit-keyframes admission {
-    0% {
-        -webkit-transform: translate(140vw, 0);
-        transform: translate(140vw, 0);
-    }
-
-    100% {
-        -webkit-transform: translate(13.39vw, 0);
-        transform: translate(13.39vw, 0);
-    }
-}
-
-@keyframes admission {
-    0% {
-        -webkit-transform: translate(140vw, 0);
-        transform: translate(140vw, 0);
-    }
-
-    100% {
-        -webkit-transform: translate(13.39vw, 0);
-        transform: translate(13.39vw, 0);
-    }
-}
-
-/* # sourceMappingURL=illustration.css.map */

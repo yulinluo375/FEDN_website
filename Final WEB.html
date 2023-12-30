@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finalstyle.css">
+    <title>网站框架</title>
+
+</head>
+
+<body>
+
+    <!-- 搭建网站布局框架 -->
+    <!-- <div class="header"> -->
+    <!-- 头部盒子 navigation bar笔记：导航栏的开发不直接用链接a,而是采用li包含链接a的方式-->
+    <!-- <! -- header box navigation bar notes: navigation bar development does not directly use the link a, but using li contains the link a way -->
+    <!-- navigation bar  -->
+    <!-- 鼠标触碰导航栏发生的一些动效采用css去处理 -->
+    <!-- The use of css to deal with the mouse to touch the navigation bar occurs some dynamic effects -->
+    <!-- 关于过度效果的笔记：
+        格式：Transition：要过渡的属性 花费的时间 运动曲线 何时开始 -->
+    <!-- Notes on the Excess effect:
+        Format: 
+        Transition: 
+         attribute to be transitioned 
+         Time spent 
+         Motion curve
+         When to start -->
+
+    <div class="nav">
+        <ul>
+            <li><a href="illustration/illustration.html">Illustration</a></li>
+            <li><a href="read/read.html">Read</a></li>
+            <li><a href="interflow/interflow.html">Community</a></li>
+            <li id="nav5" class="dropdown">
+                <div class="dt" id="dt">
+                    <a href="#" id="more-link">More</a>
+                </div>
+
+                <div class="dd" id="dd" style="display:none;">
+                    <ul>
+                        <li><a href="More/pixel_luxun1.html">Fading Pixels</a></li>
+                        <li><a href="More/rotate_luxun1.html" style="margin:10px 0 20px -360px ;
+                                            width: 560px;
+                                            text-align:left;
+                                            ">Crazy Rotating Images</a></li>
+                        <li><a href="More/rotate_rect_luxun2.html" style="width:350px;
+                                            margin: 10px 0 20px  100px;
+                                            ">Tumbling Geometric Pixel</a></li>
+                        <li><a href="More/pixel_luxun7.html" style="margin:10px 0 20px -550px ;
+                                            width: 700px;
+                                            text-align:left;
+                                            ">Pixel Masking</a></li>
+                        <li><a href="More/pixel_48.html" style="width:300px;
+                                            margin: 10px 0 20px  130px;
+                                            ">Pixel Landscape 1</a></li>
+                        <li><a href="More/pixel_20.html" style="margin:10px 0 20px -200px ;
+                                            width: 400px;
+                                            text-align:left;
+                                            ">Pixel Landscape 2</a></li>
+                        <li><a href="More/pixel_luxun11.html" style=" width:220px;
+                                            margin: 10px 0 20px  200px;
+                                            ">Pixel Luxun</a></li>
+                        <li><a href="More/flashing.html" style="margin:10px 0 20px -770px ;
+                                            width: 950px;
+                                            text-align:left;
+                                            ">Rapidly Flashing Pixels</a></li>
+                        <li><a href="More/rotate_rect_luxun20.html" style="
+                                            margin: 10px 0 20px  130px;
+                                            width:400px;
+                                            ">Trumbing Grometric Sway</a></li>
+                        <li><a href="More/rect.html" style="margin:10px 0 20px -360px ;
+                                            width: 560px;
+                                            text-align:left;
+                                            ">Infinite Multiplication of Green Pixels</a></li>
+                        <li><a href="More/streaming_binary.html" style="width: 600px;">Streaming Binary</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+
+            <li>
+                <!-- <div style="padding-top:30px;
+                ">
+                    <input type="button" id="bt" value="About" />
+                </div> -->
+                <div>
+                    <a href="#" id="bt1">About</a>
+
+                </div>
+            </li>
+
+
+            <!-- <li><a href="login/login.html" style="font-size: 20px">Log in/Sign up</a></li> -->
+
+            <li>
+                <div>
+                    <a herf="#" id="bt2" style="font-size:20px;">Log in/Sign up</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- 弹窗和背景虚化 Popups and background vignetting -->
+        <!-- 点击About后出现的弹窗 -->
+        <div id="popDiv1" class="popdiv1" style="display:none;">
+            <!-- 弹窗里放一个关闭按钮 -->
+            <a href="#" id="close1">Close</a>
+            <!-- 再放一些文字板块 -->
+            <div>
+                <h1>About this website</h1>
+                <div class="introweb">
+                    <h2>This site is for nostalgia. <br>
+                        This site is for the record.<br>
+                        This site is for the rebirth of memory.</h2>
+
+                    <h2 class="hleft">
+                        Anything more complicated and fancy is just a string of data.
+                        And the simplest data expressions, "0" and "1", are much more than just numbers.<br>
+                        This web is about Digital Childhood.The authors of the website expect to create a new field with
+                        these illustrations from textbooks.
+                        A field between the non-digital and the digital,also physical and virtual </h2>
+
+
+                    <h2>These illustrations come from textbooks.<br>
+                        These illustrations come from our memories.<br>
+                        These illustrations are also preserved as data.<br></h2>
+                </div>
+            </div>
+
+        </div>
+        <div id="bg1" class="bg1" style="display:none;"></div>
+
+        <!-- 点击Login之后出现的注册界面，同样以弹窗形式展现 -->
+        <div id="popDiv2" class="popdiv2" style="display:none;">
+            <!-- 同样需要给Login界面设置一个关闭的botton -->
+            <a href="#" id="close2">X</a>
+
+            <!-- 设置整个login 界面的大盒子 -->
+            <div class="container">
+                <!-- register -->
+                <div class="form-container sign-up-containedr">
+                    <div class="form">
+                        <h2>sign up</h2>
+                        <input type="text" name="username" id="username" placeholder="Username...">
+                        <input type="email" name="email" id="email" placeholder="Email...">
+                        <input type="password" name="password" id="password" placeholder="Password...">
+                        <button class="signUp">sign up</button>
+                    </div>
+                </div>
+                <!-- login -->
+                <div class="form-container sign-in-container">
+                    <div class="form">
+                        <h2>sign in</h2>
+                        <input type="email" name="email" id="email2" placeholder="Email...">
+                        <input type="password" name="password" id="password2" placeholder="Password...">
+                        <a href="#" class="forget-password">forget your password</a>
+                        <button class="signIn">sign in</button>
+                    </div>
+                </div>
+                <!-- overlay container -->
+                <div class="overlay_container">
+                    <div class="overlay">
+                        <!-- overlay left -->
+                        <div class="overlay_panel overlay_left_container">
+                            <h2>The Digital Age</h2>
+                            <p>Childhood in digital age:The Illustration from Textbook</p>
+                            <button id="sign-in">sign in</button>
+                        </div>
+                        <!-- overlay right -->
+                        <div class="overlay_panel overlay_right_container">
+                            <h2> Archived Childhood</h2>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button id="sign-up">sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bg2" class="bg2" style="display:none;"></div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="finalscript.js"></script>
+
+
+
+</body>
+
+</html>

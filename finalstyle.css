@@ -1,0 +1,406 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+
+a {
+    text-decoration: none;
+}
+
+
+/* 背景的随机白色方块 */
+/* Random white squares in the background */
+.rectangular-bar {
+    position: absolute;
+    background-color: white;
+    border: 3px solid rgb(24, 116, 18);
+}
+
+
+/* 像素鼠标效果的生成 */
+/* Pixel mouse effect generation */
+.mouse-trail {
+    position: absolute;
+    color: green;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+.nav {
+    height: 100px;
+    background-color: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.nav ul li {
+    float: left;
+    background-color: none;
+}
+
+.nav ul li a {
+    /* 转化为行内块元素，可以设置宽和高 */
+    /* line-height=height 可以使得文字垂直居中 */
+    /* Converted to an inline block element with width and height */
+    /* line-height=height to centre text vertically */
+    display: block;
+    height: 80px;
+    padding: 0 70px;
+    line-height: 80px;
+    font-size: 36px;
+    color: white;
+}
+
+
+.nav ul .dropdown .dd {
+    /* display: none; */
+    width: 240px;
+    height: 800px;
+    background-color: white;
+}
+
+
+.nav ul .dropdown .dd ul li a {
+    /* display: none; */
+    height: 30px;
+    width: 200px;
+    background-color: green;
+    text-align: right;
+    font-size: 28px;
+    /* margin-right: 0;  margin-top: 10px;  margin-bottom: 20px;  margin-left:150px;*/
+    margin: 10px 0 20px 150px;
+    padding: 0;
+    color: white;
+    box-shadow: 5px 6px 12px rgb(17, 75, 14);
+
+}
+
+
+.nav ul li a:hover {
+    border-bottom: 5px solid green;
+    background-color: white;
+    color: green;
+    /* margin-bottom: 60px; */
+
+}
+
+
+
+.nav ul li a:hover .dropdown .dd {
+    display: block;
+    width: 240px;
+    height: 800px;
+    background-color: white;
+
+}
+
+.nav ul li a:hover .dropdown .dd ul li a {
+    display: block;
+    height: 30px;
+    width: 200px;
+    background-color: green;
+    text-align: right;
+    font-size: 32px;
+    /* margin-right: 0;  margin-top: 10px;  margin-bottom: 20px;  margin-left:150px;*/
+    margin: 10px 0 20px 150px;
+    padding: 0;
+    color: white;
+    box-shadow: 5px 6px 12px rgb(17, 75, 14);
+
+}
+
+.nav ul .dropdown .dd ul li:hover a {
+    display: block;
+    height: 30px;
+    background-color: black;
+    color: rgb(44, 227, 44);
+    text-align: right;
+    font-size: 32px;
+    border-bottom: none;
+    box-shadow: 15px 9px 20px rgb(169, 234, 166);
+    border-radius: 10px;
+    border: 7px solid rgb(15, 136, 7);
+
+}
+
+
+
+
+/* Pop-up windows */
+
+.popdiv1 {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    text-align: right;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 99;
+    width: 1000px;
+    height: 600px;
+    left: 10%;
+    top: 20%;
+    margin-left: -150px;
+    margin-top: -20px;
+    padding-right: 10px;
+    position: fixed;
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+}
+
+/* Styling of pop-up window content */
+.popdiv1 h1 {
+    margin-left: 20px;
+    background-color: none;
+    color: white;
+    font-size: 36px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.popdiv1 .introweb h2 {
+    width: 800px;
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+.popdiv1 h1:hover {
+    color: green;
+}
+
+.popdiv1 h2:hover {
+    color: green;
+}
+
+
+/* Popup window background blur style 1 */
+.bg1 {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: alpha(opacity=50);
+    opacity: 0.3;
+    z-index: 1;
+    position: fixed;
+}
+
+.bg2 {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: alpha(opacity=50);
+    opacity: 0.3;
+    z-index: 1;
+    position: fixed;
+}
+
+
+/* login is also set as a popup named popup2 */
+.popdiv2 {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    z-index: 99;
+    width: 1000px;
+    height: 600px;
+    left: 10%;
+    top: 20%;
+    margin-left: 130px;
+    margin-top: -60px;
+    padding-right: 10px;
+    position: fixed;
+
+}
+
+
+
+/* 弹窗2的样式 */
+/* Style of pop-up 2 */
+#close2 {
+    display: block;
+    color: white;
+    text-align: right;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#close1 {
+    display: block;
+    color: white;
+    text-align: right;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.container {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.popdiv2 h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.popdiv2 .container {
+    position: relative;
+    width: 768px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.popdiv2 .form-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.6s ease-in-out;
+}
+
+.popdiv2 .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.popdiv2 .form input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    background-color: #eee;
+    border: none;
+}
+
+.forget-password {
+    display: inline-block;
+    height: 20px;
+    text-decoration: none;
+    color: #bbb;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.forget-password:hover {
+    color: lightslategray;
+    border-bottom: 2px solid green;
+}
+
+.popdiv2 button {
+    background: green;
+    padding: 10px 50px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+    transition: transform 80;
+}
+
+.popdiv2 .container button:active {
+    transform: scale(0.95);
+}
+
+.overlay_container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 100;
+    right: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    left: -100%;
+    background-color: green;
+}
+
+.overlay_panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: white;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.overlay_panel button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.overlay_panel p {
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+}
+
+.overlay_right_container {
+    right: 0;
+}
+
+.container.active .sign-up-container {
+    transform: translateX(100%);
+    z-index: 5;
+}
+
+.container.active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.container.active .overlay_container {
+    transform: translateX(-100%);
+}
+
+.container.active .overlay {
+    transform: translateX(50%);
+}

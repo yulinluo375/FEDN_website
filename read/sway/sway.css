@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    color: green;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.mouse-trail {
+    position: absolute;
+    color: green;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+
+/* 基本信息介绍的导航栏 */
+
+.introweb {
+    position: fixed;
+    top: 0;
+    padding-left: 40px;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 10px;
+    height: 80px;
+    z-index: 1;
+}
+
+
+.introweb ul li {
+    margin-top: 10px;
+    float: left;
+    background-color: none;
+    ;
+}
+
+.introweb .read {
+    width: 200px;
+    height: 80px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.introweb .infor {
+    display: block;
+    height: 80px;
+    width: 600px;
+    color: white;
+    font-size: 32px;
+}
+
+.introweb .name {
+    display: block;
+    height: 80px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+    margin-right: 90px;
+    text-align: right;
+    color: white
+}
+
+.introweb ul li a:hover {
+    color: white;
+    box-shadow: 0px 10px 20px rgb(80, 90, 81);
+}
+
+.introweb .infor a:hover {
+    color: green;
+}
+
+
+
+
+/* 文章的名字和标题 */
+.title {
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 100px;
+    width: 975px;
+    background-color: green;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    z-index: 1;
+    box-shadow: 0px 10px 20px rgb(80, 90, 81);
+}
+
+/* .title span { */
+
+
+
+
+.content {
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    margin-left: 135px;
+    margin-right: 150px;
+    margin-top: 50px;
+    width: 400px;
+    font-size: 18px;
+    /* background-color: green; */
+    text-align: justifys;
+    margin-bottom: 500px;
+    padding: 100px 200px 50px 200px;
+    border: 3px solid green;
+    box-shadow: 0 20px 40px rgb(55, 112, 62);
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(156, 152, 152);
+}
+
+.content span {
+    display: block;
+    margin-bottom: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+
+}
+
+
+
+
+
+/* 书的角度旋转 */
+
+.container {
+    position: fixed;
+    top: 280px;
+    right: 20px;
+    /* background-color: white; */
+    width: 600px;
+    height: 500px;
+}
+
+
+.container ul {
+    list-style: none;
+    width: 291px;
+    height: 420px;
+    transform-style: preserve-3d;
+    perspective: 900px;
+    transition: 4s;
+    margin-left: 140px;
+}
+
+.container li {
+    position: absolute;
+    transform-origin: left;
+}
+
+.container li:nth-child(1) {
+    transform: rotateY(-40deg);
+    transition: 3.5s;
+}
+
+.container li:nth-child(2) {
+    transform: rotateY(-38deg);
+    transition: 3.2s;
+}
+
+.container li:nth-child(3) {
+    transform: rotateY(-36deg);
+    transition: 2.9s;
+}
+
+.container li:nth-child(4) {
+    transform: rotateY(-34deg);
+    transition: 2.6s;
+}
+
+.container li:nth-child(5) {
+    transform: rotateY(-32deg);
+    transition: 2.3s;
+}
+
+.container li:nth-child(6) {
+    transform: rotateY(-30deg);
+    transition: 2.0s;
+}
+
+
+.container li:nth-child(7) {
+    transform: rotateY(-28deg);
+    transition: 1.7s;
+}
+
+
+.container li:nth-child(8) {
+    transform: rotateY(-26deg);
+    transition: 1.4s;
+}
+
+.container li:nth-child(9) {
+    transform: rotateY(-24deg);
+    transition: 1.2s;
+}
+
+.container li:nth-child(10) {
+    transform: rotateY(-22deg);
+    transition: 1.0s;
+}
+
+.container li:nth-child(11) {
+    transform: rotateY(-20deg);
+    transition: 0.8s;
+}
+
+.container li:nth-child(12) {
+    transform: rotateY(-18deg);
+    transition: 0.6s;
+}
+
+.container li:nth-child(13) {
+    transform: rotateY(-14deg);
+    transition: 0.4s;
+}
+
+
+
+
+
+.container ul:hover li:nth-child(1) {
+    transform: rotateY(-180deg);
+    transition: 0.8s;
+}
+
+.container ul:hover li:nth-child(2) {
+    transform: rotateY(-180deg);
+    transition: 1.3s;
+}
+
+.container ul:hover li:nth-child(3) {
+    transform: rotateY(-180deg);
+    transition: 1.6s;
+}
+
+.container ul:hover li:nth-child(4) {
+    transform: rotateY(-180deg);
+    transition: 1.9s;
+}
+
+.container ul:hover li:nth-child(5) {
+    transform: rotateY(-180deg);
+    transition: 2.1s;
+}
+
+.container ul:hover li:nth-child(6) {
+    transform: rotateY(-180deg);
+    transition: 2.4s;
+}
+
+.container ul:hover li:nth-child(7) {
+    transform: rotateY(-180deg);
+    transition: 2.7s;
+}
+
+.container ul:hover li:nth-child(8) {
+    transform: rotateY(-180deg);
+    transition: 3.2s;
+}
+
+.container ul:hover li:nth-child(9) {
+    transform: rotateY(-180deg);
+    transition: 3.6s;
+}
+
+.container ul:hover li:nth-child(10) {
+    transform: rotateY(-180deg);
+    transition: 4s;
+}
+
+.container ul:hover li:nth-child(11) {
+    transform: rotateY(-180deg);
+    transition: 4.4s;
+}
+
+.container ul:hover li:nth-child(12) {
+    transform: rotateY(-180deg);
+    transition: 4.0s;
+}
+
+
+
+
+
+
+
+.container ul:hover {
+    transform: translateX(150px);
+}
+
+.container img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 5px 10px 15px rgb(17, 75, 14);
+}

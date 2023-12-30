@@ -1,0 +1,89 @@
+       * {
+           margin: 0px;
+           padding: 0px;
+           text-decoration: none;
+
+       }
+
+       body {
+           background-color: black;
+           color: white;
+           margin: 0;
+           padding: 0;
+           font-family: Arial, sans-serif;
+
+       }
+
+       a {
+           color: black;
+       }
+
+       /* 鼠标拖尾 */
+       li {
+           position: absolute;
+           list-style: none;
+           float: none;
+       }
+
+       .mouse-trail {
+           position: absolute;
+           color: green;
+           font-family: Arial, sans-serif;
+           font-size: 14px;
+           white-space: nowrap;
+           pointer-events: none;
+           list-style: none;
+           text-decoration: none;
+
+       }
+
+       /* #Mousenumber {
+           font: 36px 'Arial';
+           color: rgb(15, 241, 15);
+           display: block;
+       } */
+
+       h2 {
+
+           color: black;
+           font-size: 28px;
+           text-align: center;
+           background-color: rgba(255, 255, 255, 0.474);
+           height: 50px;
+           margin-left: 50px;
+           margin-right: 50px;
+           border-radius: 10PX;
+           margin-top: 20px;
+           padding: 10px;
+
+
+
+       }
+
+       .rectangular-bar {
+           position: absolute;
+           background-color: white;
+           border: 1px solid white;
+       }
+
+       .enter h1 {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 40px;
+           padding: auto;
+           text-align: center;
+           margin-top: 400px;
+           margin-left: 600px;
+           background-color: white;
+           width: 600px;
+           height: 50px;
+           color: black;
+           box-shadow: 0px 10px 20px rgb(44, 55, 45);
+           border-radius: 30PX;
+       }
+
+       .enter h1:hover a {
+           color: green;
+           font-size: 44px;
+           box-shadow: 5px 6px 12px rgb(17, 75, 14);
+
+       }
